@@ -1,17 +1,15 @@
-import fastify from "fastify";
-
-const app = fastify();
-
-// GET, POST, PUT, PATCH, DELETE
-
-// https://localhost:3333/hello
+import fastify from 'fastify'
+const app = fastify()
 
 app.get('/hello', () => {
-  return 'Hello World';
+  return 'Hello World'
 })
 
-app.listen({
-  port: 3333,
-}).then(() => { // retorna uma promise
-  console.log('HTTP Server Running!');
+app
+  .listen({
+    port: 3333,
+  })
+  .then(() => {
+    // retorna uma promise
+    console.log('HTTP Server Running!')
   })
