@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # db
-tmp/app.db
+db/app.db

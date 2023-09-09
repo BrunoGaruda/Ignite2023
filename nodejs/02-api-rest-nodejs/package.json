@@ -1,10 +1,12 @@
 {
   "name": "02-api-rest-nodejs",
+  "filetype": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
     "lint": "eslint src --ext .ts --fix"
   },
   "keywords": [],
@@ -16,6 +18,7 @@
     "eslint": "^8.48.0",
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "3.0.3",
+    "ts-node": "^10.9.1",
     "tsx": "^3.12.8",
     "typescript": "^5.2.2"
   },
